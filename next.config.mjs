@@ -1,11 +1,12 @@
-/** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
   },
-  basePath: '/-ahmed-elsayed-ai-engineer.',
-  assetPrefix: '/-ahmed-elsayed-ai-engineer./',
+  basePath: isProd ? '/-ahmed-elsayed-ai-engineer.' : '',
+  assetPrefix: isProd ? '/-ahmed-elsayed-ai-engineer./' : '',
   reactStrictMode: true,
 };
 
