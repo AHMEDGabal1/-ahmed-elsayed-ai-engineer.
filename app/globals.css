@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  @apply bg-background text-slate-100 scroll-smooth;
+}
+
+body {
+  @apply antialiased;
+}
+
+::selection {
+  background: rgba(59, 130, 246, 0.3);
+  color: #f9fafb;
+}
+
+.glass {
+  @apply bg-surface/70 backdrop-blur-xl border border-white/5 shadow-soft;
+}
+
+.tag-pill {
+  @apply rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium tracking-wide text-slate-200;
+}
+
+.section-padding {
+  @apply px-6 py-20 md:px-10 lg:px-24;
+}
+
+.max-width {
+  @apply mx-auto w-full max-w-6xl;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-accent-blue via-accent-purple to-accent-cyan bg-clip-text text-transparent;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-gradient-to-r from-accent-blue to-accent-purple px-6 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:from-accent-purple hover:to-accent-cyan hover:shadow-[0_20px_60px_rgba(59,130,246,0.45)];
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 px-6 py-2.5 text-sm font-semibold text-slate-100 shadow-soft transition hover:bg-white/10;
+}
+
+.nav-blur {
+  @apply glass fixed inset-x-4 top-4 z-40 flex items-center justify-between rounded-2xl px-4 py-2;
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: rgba(148, 163, 184, 0.7);
+  border-radius: 999px;
+}
+
