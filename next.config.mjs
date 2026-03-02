@@ -4,6 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: '/-ahmed-elsayed-ai-engineer.',
+  assetPrefix: '/-ahmed-elsayed-ai-engineer./',
   reactStrictMode: true,
 };
 
