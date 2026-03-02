@@ -1,7 +1,6 @@
-import type { Metadata } from "next";
 import "./globals.css";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Ahmed Elsayed | AI Engineer & Intelligent Systems Builder",
   description:
     "AI Engineer specializing in LLMs, AI agents, and intelligent automation systems that help businesses think, learn, and scale.",

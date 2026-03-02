@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const links = [
-  { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Projects" },
   { href: "#vision", label: "AI Agency" },
@@ -19,9 +19,9 @@ export function Navbar() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
     >
-      <a href="#top" className="flex items-center gap-2">
-        <div className="flex h-8 w-8 items-center justify-center rounded-2xl bg-gradient-to-br from-accent-blue via-accent-purple to-accent-cyan text-xs font-semibold text-white">
-          AE
+      <a href="#top" className="flex items-center gap-3">
+        <div className="relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-full border border-white/10 bg-slate-800">
+          <Image src="/profile.jpg" alt="Ahmed Elsayed" fill className="object-cover" />
         </div>
         <div className="leading-tight">
           <div className="text-xs font-semibold text-slate-100">

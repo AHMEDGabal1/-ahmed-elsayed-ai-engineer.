@@ -57,8 +57,8 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
-          <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-slate-300 backdrop-blur">
-            <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-400" />
+          <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm font-medium text-slate-300 backdrop-blur">
+            <span className="inline-block h-2 w-2 rounded-full bg-emerald-400" />
             Available for remote roles & collaborations
           </div>
 
@@ -70,14 +70,14 @@ export function Hero() {
             that think, learn, and scale.
           </h1>
 
-          <p className="mt-5 max-w-xl text-balance text-sm leading-relaxed text-slate-300 md:text-base">
+          <p className="mt-5 max-w-xl text-balance text-base leading-relaxed text-slate-300 md:text-lg">
             I design and build production-grade AI systems—LLM agents, automation
             workflows, and computer vision pipelines—that turn complex problems
             into scalable, intelligent products. From idea to deployed system, I
             bridge research-level AI with real-world business impact.
           </p>
 
-          <div className="mt-6 flex flex-wrap items-center gap-3 text-xs text-slate-300 md:text-sm">
+          <div className="mt-6 flex flex-wrap items-center gap-3 text-sm text-slate-300 md:text-base">
             <span className="tag-pill">AI Engineer</span>
             <span className="tag-pill">LLMs & RAG</span>
             <span className="tag-pill">AI Agents & n8n</span>

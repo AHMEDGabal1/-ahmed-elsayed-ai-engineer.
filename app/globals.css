@@ -6,9 +6,13 @@
   color-scheme: dark;
 }
 
+html {
+  font-size: 18px;
+}
+
 html,
 body {
-  @apply bg-background text-slate-100 scroll-smooth;
+  @apply bg-background text-slate-100 scroll-smooth leading-relaxed;
 }
 
 body {
