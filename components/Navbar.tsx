@@ -45,7 +45,7 @@ export function Navbar() {
       </div>
       <div className="flex items-center gap-3">
         <a
-          href="/Ahmed_Elsayed_resume.pdf"
+          href="Ahmed_Elsayed_resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden text-xs font-medium text-slate-200 underline-offset-4 hover:text-accent-cyan hover:underline md:inline"

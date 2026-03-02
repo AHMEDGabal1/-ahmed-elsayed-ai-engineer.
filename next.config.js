@@ -1,4 +1,5 @@
 const isProd = process.env.NODE_ENV === 'production';
+const REPO_NAME = '/-ahmed-elsayed-ai-engineer.';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -6,8 +7,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: isProd ? '/-ahmed-elsayed-ai-engineer.' : '',
-  assetPrefix: isProd ? '/-ahmed-elsayed-ai-engineer./' : '',
+  basePath: isProd ? REPO_NAME : '',
+  assetPrefix: isProd ? REPO_NAME : '',
   reactStrictMode: true,
 };
 
