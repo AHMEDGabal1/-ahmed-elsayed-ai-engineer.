@@ -21,7 +21,7 @@ export function Navbar() {
     >
       <a href="#top" className="flex items-center gap-3">
         <div className="relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-full border border-white/10 bg-slate-800">
-          <Image src="/profile.jpg" alt="Ahmed Elsayed" fill className="object-cover" />
+          <Image src="profile.jpg" alt="Ahmed Elsayed" fill className="object-cover" />
         </div>
         <div className="leading-tight">
           <div className="text-xs font-semibold text-slate-100">

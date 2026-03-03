@@ -54,7 +54,7 @@ export function About() {
         >
           <div className="relative aspect-[4/4] w-full max-w-sm mx-auto md:mx-0 overflow-hidden rounded-3xl border border-white/10 shadow-2xl md:aspect-[4/5]">
             <Image
-              src="/profile.jpg"
+              src="profile.jpg"
               alt="Ahmed Elsayed"
               fill
               className="object-cover object-top"
@@ -66,7 +66,7 @@ export function About() {
           <div className="glass rounded-3xl p-5">
             <div className="flex items-center gap-4">
               <div className="relative flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-slate-800">
-                <Image src="/profile.jpg" alt="Ahmed Elsayed" fill className="object-cover object-top" />
+                <Image src="profile.jpg" alt="Ahmed Elsayed" fill className="object-cover object-top" />
               </div>
               <div>
                 <div className="text-xs uppercase tracking-[0.2em] text-slate-400">

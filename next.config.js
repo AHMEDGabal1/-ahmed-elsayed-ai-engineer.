@@ -1,4 +1,5 @@
 const isProd = process.env.NODE_ENV === 'production';
+const isGithubActions = process.env.GITHUB_ACTIONS === 'true';
 const REPO_NAME = '/-ahmed-elsayed-ai-engineer.';
 
 /** @type {import('next').NextConfig} */
@@ -7,8 +8,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: isProd ? REPO_NAME : '',
-  assetPrefix: isProd ? REPO_NAME : '',
+  basePath: isGithubActions ? REPO_NAME : '',
+  assetPrefix: isGithubActions ? REPO_NAME : '',
   reactStrictMode: true,
 };
 
