@@ -93,7 +93,7 @@ export function Hero() {
               Work With Me
             </a>
             <a
-              href="Ahmed_Elsayed_resume.pdf"
+              href="/Ahmed_Elsayed_resume.pdf"
               className="btn-secondary"
               target="_blank"
               rel="noopener noreferrer"
