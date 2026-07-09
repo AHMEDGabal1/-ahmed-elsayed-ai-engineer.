@@ -15,58 +15,92 @@ type Project = {
 
 const projects: Project[] = [
   {
-    name: "ForsaHunt",
-    label: "AI-Powered Tender Discovery Platform",
+    name: "ArabBot Studio",
+    label: "No-Code AI WhatsApp Chatbot SaaS (Founder)",
     impact:
-      "Automating how sales teams discover, rank, and act on high-value tenders.",
+      "Helping Egyptian SMBs deploy AI chatbots that understand the Egyptian Arabic dialect—no code required.",
     problem:
-      "Sales teams waste hours manually scanning tender portals with poor search, inconsistent formats, and no intelligence on fit or priority.",
+      "Egyptian SMBs lack affordable, local-language automation; off-the-shelf bots fail on Egyptian Arabic dialect and multi-tenant isolation.",
     solution:
-      "Built an LLM-powered platform that monitors tender sources in real time, semantically matches opportunities to company capabilities, and ranks them based on strategic fit.",
+      "Founded a multi-tenant SaaS with a 5-stage pipeline: dialect normalization → 9-category intent routing → RAG retrieval → response generation, built on LangChain, Google Gemini 2.0/2.5, and FAISS.",
     result:
-      "Significantly reduced manual search time, increased visibility of high-value tenders, and created a repeatable pipeline for opportunity discovery.",
+      "Shipped an async FastAPI + React 19/TypeScript dashboard with JWT auth and workspace isolation on PostgreSQL/Redis—~45 ms webhook ACK and ~120 ms p95 AI latency.",
     tech: [
       "Python",
       "FastAPI",
       "LangChain",
-      "RAG",
-      "LLMs",
-      "Vector DB",
-      "React.js"
+      "Gemini",
+      "FAISS",
+      "React 19",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    link: "https://github.com/AHMEDGabal1"
+  },
+  {
+    name: "ForsaHunt",
+    label: "RAG-Powered Tender Discovery Platform",
+    impact:
+      "Automating how sales teams discover, rank, and act on high-value tenders.",
+    problem:
+      "Sales teams wasted hours scanning tender portals with poor search, inconsistent formats, and no intelligence on fit or priority.",
+    solution:
+      "Built an LLM + FAISS semantic matching pipeline that aligns tenders to company profiles in real time and ranks them by strategic fit via FastAPI async endpoints.",
+    result:
+      "Cut manual research time by 70%, reduced irrelevant results by 80% across 10,000+ tender docs, and served 500+ daily queries at sub-2s p95—adopted by sales within one week.",
+    tech: [
+      "Python",
+      "FastAPI",
+      "LangChain",
+      "FAISS",
+      "OpenAI",
+      "React.js",
+      "Docker"
     ],
     link: "https://github.com/AHMEDGabal1"
   },
   {
     name: "Dentlyzer",
-    label: "AI-Powered Dental Care Platform (Graduation Project)",
+    label: "AI Dental Care Platform (Graduation Project, Grade A+)",
     impact:
       "Standardizing diagnostics and automating workflows for modern dental practices.",
     problem:
-      "Dental clinics struggle with fragmented workflows, manual documentation, and inconsistent diagnostics across X-rays, intraoral scans, and aligner tracking.",
+      "Clinics struggle with fragmented workflows, manual documentation, and inconsistent X-ray diagnostics.",
     solution:
-      "Designed a unified platform combining AI X-ray analysis, intraoral scanner integration, and remote aligner tracking with automated documentation and patient engagement.",
+      "Built a PyTorch + Computer Vision X-ray analysis engine and unified it with intraoral scanner support, remote aligner tracking, and patient management.",
     result:
-      "Improved clinical efficiency, enhanced diagnostic consistency, and created a foundation for scalable, AI-first dental operations.",
-    tech: [
-      "Python",
-      "Computer Vision",
-      "Deep Learning",
-      "Transformers",
-      "FastAPI"
-    ]
+      "Reduced diagnostic reporting time by 60% across 500+ X-ray cases, saved 2+ admin hours per dentist per day, and earned an A+ as top-ranked in cohort.",
+    tech: ["PyTorch", "Computer Vision", "NLP", "FastAPI", "React.js", "Medical AI"],
+    link: "https://github.com/AHMEDGabal1"
   },
   {
-    name: "Microservices Translation & Summarization",
+    name: "Translation & Summarization Microservices",
     label: "LLM-Based Microservices Platform",
     impact:
-      "Real-time, scalable language services for internal tools and client applications.",
+      "Real-time, scalable language services with independent per-service scaling and zero-downtime deploys.",
     problem:
-      "Teams needed real-time translation and summarization with reliability, observability, and the ability to independently scale components.",
+      "Teams needed reliable, observable translation/summarization that could scale components independently.",
     solution:
-      "Architected a microservices-based platform using LLMs for translation and summarization, exposed via clean APIs with autoscaling-friendly deployment.",
+      "Architected containerized microservices exposing multiple LLM backends through a unified REST API gateway with async processing.",
     result:
-      "Delivered low-latency, fault-tolerant services ready to plug into dashboards, chat interfaces, and internal tools.",
-    tech: ["Python", "LLMs", "FastAPI", "Docker", "Microservices", "RAG"]
+      "Achieved zero-downtime deployments with load balancing and cut average summarization latency by 40%.",
+    tech: ["Python", "FastAPI", "Docker", "LangChain", "REST APIs", "Microservices"],
+    link: "https://github.com/AHMEDGabal1"
+  },
+  {
+    name: "Sports Classification & Action Recognition",
+    label: "Deep Learning Research Project",
+    impact:
+      "Multi-modal sports video understanding with strong classification accuracy.",
+    problem:
+      "Action recognition across diverse sports needed robust, accurate models on limited labeled data.",
+    solution:
+      "Fine-tuned a Swin Transformer for 20-class classification and fused BERT sentiment analysis for multi-modal video + text insights.",
+    result:
+      "Reached 94% classification accuracy on a 20-class sports dataset with multi-modal insights.",
+    tech: ["PyTorch", "Swin Transformer", "BERT", "Computer Vision", "TensorFlow"],
+    link: "https://github.com/AHMEDGabal1"
   }
 ];
 

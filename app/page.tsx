@@ -5,6 +5,7 @@ import { Projects } from "@/components/Projects";
 import { AgencyVision } from "@/components/AgencyVision";
 import { ExperienceEducation } from "@/components/ExperienceEducation";
 import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import { ScrollProgress } from "@/components/ui/ScrollProgress";
 import { FloatingContact } from "@/components/ui/FloatingContact";
@@ -23,6 +24,7 @@ export default function Page() {
         <ExperienceEducation />
         <Contact />
       </main>
+      <Footer />
       <FloatingContact />
     </>
   );

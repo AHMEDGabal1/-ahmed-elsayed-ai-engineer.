@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 
 const roles = [
   "AI Engineer",
-  "AI Agents Architect",
-  "LLM Specialist",
+  "LLM Systems Architect",
+  "RAG & Agentic Pipelines",
   "NLP & Computer Vision Engineer"
 ];
 

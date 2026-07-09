@@ -39,6 +39,25 @@ export function Contact() {
             </div>
             <div className="flex items-center gap-3">
               <span className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+                Phone
+              </span>
+              <a
+                href="tel:+201017230586"
+                className="text-sm text-slate-100 underline-offset-4 hover:text-accent-cyan hover:underline"
+              >
+                +20 101 723 0586
+              </a>
+            </div>
+            <div className="flex items-center gap-3">
+              <span className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+                Location
+              </span>
+              <span className="text-sm text-slate-100">
+                Cairo, Egypt · Open to UAE relocation
+              </span>
+            </div>
+            <div className="flex items-center gap-3">
+              <span className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
                 LinkedIn
               </span>
               <a

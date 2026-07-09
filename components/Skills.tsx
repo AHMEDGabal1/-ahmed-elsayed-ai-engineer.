@@ -11,32 +11,33 @@ const categories: SkillCategory[] = [
   {
     title: "AI & Machine Learning",
     items: [
-      { name: "Large Language Models (LLMs)", level: "Expert" },
-      { name: "Transformers & RAG", level: "Advanced" },
-      { name: "Natural Language Processing (NLP)", level: "Advanced" },
-      { name: "Computer Vision", level: "Advanced" },
-      { name: "AI Agents & Multi-Agent Systems", level: "Advanced" },
-      { name: "Automation & Autonomous Pipelines", level: "Advanced" }
+      { name: "LLMs & RAG Pipelines", level: "Expert" },
+      { name: "AI Agents & Multi-Agent Systems", level: "Expert" },
+      { name: "LangChain & LangGraph", level: "Advanced" },
+      { name: "NLP & Transformers", level: "Advanced" },
+      { name: "Computer Vision (PyTorch)", level: "Advanced" },
+      { name: "Fine-Tuning (LoRA / QLoRA)", level: "Advanced" },
+      { name: "Vector Databases (FAISS)", level: "Advanced" }
     ]
   },
   {
-    title: "Programming",
+    title: "Engineering & MLOps",
     items: [
-      { name: "Python", level: "Advanced" },
-      { name: "Java", level: "Intermediate" },
-      { name: "MATLAB", level: "Intermediate" },
-      { name: "SQL", level: "Intermediate" }
+      { name: "Python", level: "Expert" },
+      { name: "FastAPI & RESTful APIs", level: "Advanced" },
+      { name: "Docker & CI/CD (GitHub Actions)", level: "Advanced" },
+      { name: "n8n & Workflow Automation", level: "Advanced" },
+      { name: "React.js & Dashboards", level: "Intermediate" },
+      { name: "SQL, Bash & Java", level: "Intermediate" }
     ]
   },
   {
-    title: "Frameworks & Tools",
+    title: "Cloud & APIs",
     items: [
-      { name: "PyTorch, TensorFlow, scikit-learn", level: "Advanced" },
-      { name: "Hugging Face, LangChain", level: "Advanced" },
-      { name: "OpenAI, LLaMA, Claude APIs", level: "Advanced" },
-      { name: "n8n, Workflow Orchestration", level: "Advanced" },
-      { name: "FastAPI, RESTful APIs, Docker", level: "Advanced" },
-      { name: "React.js, Dashboards, Auth", level: "Intermediate" }
+      { name: "Azure OpenAI & Fundamentals", level: "Advanced" },
+      { name: "OpenAI, Claude & Meta LLaMA APIs", level: "Advanced" },
+      { name: "AWS & GCP", level: "Intermediate" },
+      { name: "WebSockets & Tool-Calling Agents", level: "Advanced" }
     ]
   }
 ];
