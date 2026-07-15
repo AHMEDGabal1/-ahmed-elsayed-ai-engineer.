@@ -9,11 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#0f172a", // slate-900
-        surface: "#1e293b", // slate-800
+        background: "#1c1917", // stone-900
+        surface: "#292524", // stone-800
         accent: {
-          DEFAULT: "#3b82f6", // blue-500
-          hover: "#2563eb", // blue-600
+          DEFAULT: "#ea580c", // orange-600
+          hover: "#c2410c", // orange-700
         }
       },
       fontFamily: {

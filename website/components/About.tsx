@@ -13,15 +13,15 @@ export function About() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <h2 className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-400">
+          <h2 className="text-sm font-semibold uppercase tracking-[0.25em] text-stone-400">
             About
           </h2>
-          <p className="mt-3 text-2xl font-semibold text-slate-50 md:text-3xl">
+          <p className="mt-3 text-2xl font-semibold text-stone-50 md:text-3xl">
             AI Engineer building intelligent systems that{" "}
             <span className="text-accent">automate, optimize, and scale</span>{" "}
             businesses.
           </p>
-          <p className="mt-5 text-base leading-relaxed text-slate-300 md:text-lg">
+          <p className="mt-5 text-base leading-relaxed text-stone-300 md:text-lg">
             I&apos;m Ahmed Elsayed, an AI Engineer from Cairo, Egypt with a B.Sc.
             in Artificial Intelligence Engineering (Alamein International
             University, graduation project: A+). I specialize in designing and
@@ -29,14 +29,14 @@ export function About() {
             workflows—that solve real business problems, not just benchmark
             datasets.
           </p>
-          <p className="mt-4 text-base leading-relaxed text-slate-300 md:text-lg">
+          <p className="mt-4 text-base leading-relaxed text-stone-300 md:text-lg">
             My work lives at the intersection of deep learning, software
             engineering, and product thinking. I&apos;ve built LLM-powered tender
             discovery platforms, real-time translation and summarization
             microservices, and AI-driven healthcare tools for dentistry—all with
             a focus on robustness, scalability, and measurable impact.
           </p>
-          <p className="mt-4 text-base leading-relaxed text-slate-300 md:text-lg">
+          <p className="mt-4 text-base leading-relaxed text-stone-300 md:text-lg">
             I think like a founder: I care about shipping systems that move
             metrics, align with business strategy, and can grow into full-stack
             AI products or even companies. My long-term focus is building an
@@ -52,7 +52,7 @@ export function About() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
         >
-          <div className="relative aspect-[4/4] w-full max-w-sm mx-auto md:mx-0 overflow-hidden rounded-lg border border-slate-700 shadow-sm md:aspect-[4/5]">
+          <div className="relative aspect-[4/4] w-full max-w-sm mx-auto md:mx-0 overflow-hidden rounded-lg border border-stone-700 shadow-sm md:aspect-[4/5]">
             <Image
               src="profile.jpg"
               alt="Ahmed Elsayed"
@@ -65,54 +65,54 @@ export function About() {
           </div>
           <div className="glass rounded-lg p-5">
             <div className="flex items-center gap-4">
-              <div className="relative flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded border border-slate-700 bg-slate-800">
+              <div className="relative flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded border border-stone-700 bg-stone-800">
                 <Image src="profile.jpg" alt="Ahmed Elsayed" fill className="object-cover object-top" />
               </div>
               <div>
-                <div className="text-xs uppercase tracking-[0.2em] text-slate-400">
+                <div className="text-xs uppercase tracking-[0.2em] text-stone-400">
                   Profile
                 </div>
-                <div className="text-sm font-semibold text-slate-50">
+                <div className="text-sm font-semibold text-stone-50">
                   AI Engineer & Future AI Agency Founder
                 </div>
               </div>
             </div>
-            <dl className="mt-5 grid grid-cols-2 gap-3 text-sm text-slate-300">
-              <div className="rounded border border-slate-700 bg-slate-800 p-4">
-                <dt className="text-xs uppercase tracking-[0.16em] text-slate-400">
+            <dl className="mt-5 grid grid-cols-2 gap-3 text-sm text-stone-300">
+              <div className="rounded border border-stone-700 bg-stone-800 p-4">
+                <dt className="text-xs uppercase tracking-[0.16em] text-stone-400">
                   Years in AI
                 </dt>
-                <dd className="mt-1 text-xl font-semibold text-slate-50">
+                <dd className="mt-1 text-xl font-semibold text-stone-50">
                   3+
                 </dd>
-                <p className="mt-1 text-xs text-slate-400">
+                <p className="mt-1 text-xs text-stone-400">
                   Hands-on with LLMs, CV, NLP & agents
                 </p>
               </div>
-              <div className="rounded border border-slate-700 bg-slate-800 p-4">
-                <dt className="text-xs uppercase tracking-[0.16em] text-slate-400">
+              <div className="rounded border border-stone-700 bg-stone-800 p-4">
+                <dt className="text-xs uppercase tracking-[0.16em] text-stone-400">
                   Graduate
                 </dt>
-                <dd className="mt-1 text-xl font-semibold text-slate-50">
+                <dd className="mt-1 text-xl font-semibold text-stone-50">
                   AI Engineering
                 </dd>
-                <p className="mt-1 text-xs text-slate-400">
+                <p className="mt-1 text-xs text-stone-400">
                   Alamein International University
                 </p>
               </div>
-              <div className="rounded border border-slate-700 bg-slate-800 p-4">
-                <dt className="text-xs uppercase tracking-[0.16em] text-slate-400">
+              <div className="rounded border border-stone-700 bg-stone-800 p-4">
+                <dt className="text-xs uppercase tracking-[0.16em] text-stone-400">
                   Key Tech
                 </dt>
-                <dd className="mt-1 text-base font-semibold text-slate-50">
+                <dd className="mt-1 text-base font-semibold text-stone-50">
                   Python, PyTorch, TensorFlow, LangChain, n8n
                 </dd>
               </div>
-              <div className="rounded border border-slate-700 bg-slate-800 p-4">
-                <dt className="text-xs uppercase tracking-[0.16em] text-slate-400">
+              <div className="rounded border border-stone-700 bg-stone-800 p-4">
+                <dt className="text-xs uppercase tracking-[0.16em] text-stone-400">
                   Industries
                 </dt>
-                <dd className="mt-1 text-base font-semibold text-slate-50">
+                <dd className="mt-1 text-base font-semibold text-stone-50">
                   Healthcare, SaaS, Gov Tenders, Automation
                 </dd>
               </div>

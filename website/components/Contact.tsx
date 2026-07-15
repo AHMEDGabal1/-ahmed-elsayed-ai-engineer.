@@ -12,72 +12,72 @@ export function Contact() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <h2 className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-400">
+          <h2 className="text-sm font-semibold uppercase tracking-[0.25em] text-stone-400">
             Contact
           </h2>
-          <p className="mt-3 text-2xl font-semibold text-slate-50 md:text-3xl">
+          <p className="mt-3 text-2xl font-semibold text-stone-50 md:text-3xl">
             Let&apos;s build something{" "}
             <span className="text-accent">intelligent</span> together.
           </p>
-          <p className="mt-4 text-sm leading-relaxed text-slate-300 md:text-base">
+          <p className="mt-4 text-sm leading-relaxed text-stone-300 md:text-base">
             Whether you&apos;re a founder, engineering leader, or recruiter, I&apos;d
             love to talk about how AI agents, LLMs, and automation can unlock
             new capabilities for your product or organization.
           </p>
 
-          <div className="mt-6 space-y-3 text-sm text-slate-200">
+          <div className="mt-6 space-y-3 text-sm text-stone-200">
             <div className="flex items-center gap-3">
-              <span className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+              <span className="text-xs font-semibold uppercase tracking-[0.18em] text-stone-500">
                 Email
               </span>
               <a
                 href="mailto:ahmedgabal994@gmail.com"
-                className="text-sm text-slate-100 underline-offset-4 hover:text-accent hover:underline"
+                className="text-sm text-stone-100 underline-offset-4 hover:text-accent hover:underline"
               >
                 ahmedgabal994@gmail.com
               </a>
             </div>
             <div className="flex items-center gap-3">
-              <span className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+              <span className="text-xs font-semibold uppercase tracking-[0.18em] text-stone-500">
                 Phone
               </span>
               <a
                 href="tel:+201017230586"
-                className="text-sm text-slate-100 underline-offset-4 hover:text-accent hover:underline"
+                className="text-sm text-stone-100 underline-offset-4 hover:text-accent hover:underline"
               >
                 +20 101 723 0586
               </a>
             </div>
             <div className="flex items-center gap-3">
-              <span className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+              <span className="text-xs font-semibold uppercase tracking-[0.18em] text-stone-500">
                 Location
               </span>
-              <span className="text-sm text-slate-100">
+              <span className="text-sm text-stone-100">
                 Cairo, Egypt · Open to UAE relocation
               </span>
             </div>
             <div className="flex items-center gap-3">
-              <span className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+              <span className="text-xs font-semibold uppercase tracking-[0.18em] text-stone-500">
                 LinkedIn
               </span>
               <a
                 href="https://linkedin.com/in/ahmed-gabal-09a8b32a3"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-slate-100 underline-offset-4 hover:text-accent hover:underline"
+                className="text-sm text-stone-100 underline-offset-4 hover:text-accent hover:underline"
               >
                 linkedin.com/in/ahmed-gabal-09a8b32a3
               </a>
             </div>
             <div className="flex items-center gap-3">
-              <span className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+              <span className="text-xs font-semibold uppercase tracking-[0.18em] text-stone-500">
                 GitHub
               </span>
               <a
                 href="https://github.com/AHMEDGabal1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-slate-100 underline-offset-4 hover:text-accent hover:underline"
+                className="text-sm text-stone-100 underline-offset-4 hover:text-accent hover:underline"
               >
                 github.com/AHMEDGabal1
               </a>

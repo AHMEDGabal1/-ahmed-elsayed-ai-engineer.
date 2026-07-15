@@ -110,16 +110,16 @@ export function Projects() {
       <div className="max-width">
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <h2 className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-400">
+            <h2 className="text-sm font-semibold uppercase tracking-[0.25em] text-stone-400">
               Projects
             </h2>
-            <p className="mt-3 text-2xl font-semibold text-slate-50 md:text-3xl">
+            <p className="mt-3 text-2xl font-semibold text-stone-50 md:text-3xl">
               AI systems built for{" "}
               <span className="text-accent">real business impact</span>, not
               just research demos.
             </p>
           </div>
-          <p className="max-w-md text-sm leading-relaxed text-slate-300 md:text-base">
+          <p className="max-w-md text-sm leading-relaxed text-stone-300 md:text-base">
             Each project is designed as a product: clear users, measurable value,
             and an architecture that can scale from prototype to production.
           </p>
@@ -135,44 +135,44 @@ export function Projects() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: idx * 0.08 }}
             >
-              <div className="pointer-events-none absolute inset-0 bg-slate-800/20 opacity-0 transition group-hover:opacity-100" />
+              <div className="pointer-events-none absolute inset-0 bg-stone-800/20 opacity-0 transition group-hover:opacity-100" />
               <div className="relative z-10 grid gap-6 md:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)] md:items-start">
                 <div>
-                  <div className="flex flex-wrap items-center gap-3 text-xs text-slate-400">
+                  <div className="flex flex-wrap items-center gap-3 text-xs text-stone-400">
                     <span className="rounded bg-emerald-500/10 px-2.5 py-1 text-[11px] font-semibold text-emerald-400">
                       Deployed AI System
                     </span>
                     <span>{project.label}</span>
                   </div>
-                  <h3 className="mt-3 text-lg font-semibold text-slate-50 md:text-xl">
+                  <h3 className="mt-3 text-lg font-semibold text-stone-50 md:text-xl">
                     {project.name}
                   </h3>
-                  <p className="mt-2 text-sm font-medium text-slate-200 md:text-base">
+                  <p className="mt-2 text-sm font-medium text-stone-200 md:text-base">
                     {project.impact}
                   </p>
 
-                  <div className="mt-4 grid gap-3 text-xs text-slate-300 md:grid-cols-3 md:text-sm">
+                  <div className="mt-4 grid gap-3 text-xs text-stone-300 md:grid-cols-3 md:text-sm">
                     <div>
-                      <div className="text-[11px] uppercase tracking-[0.18em] text-slate-500">
+                      <div className="text-[11px] uppercase tracking-[0.18em] text-stone-500">
                         Problem
                       </div>
                       <p className="mt-1">{project.problem}</p>
                     </div>
                     <div>
-                      <div className="text-[11px] uppercase tracking-[0.18em] text-slate-500">
+                      <div className="text-[11px] uppercase tracking-[0.18em] text-stone-500">
                         Solution
                       </div>
                       <p className="mt-1">{project.solution}</p>
                     </div>
                     <div>
-                      <div className="text-[11px] uppercase tracking-[0.18em] text-slate-500">
+                      <div className="text-[11px] uppercase tracking-[0.18em] text-stone-500">
                         Result
                       </div>
                       <p className="mt-1">{project.result}</p>
                     </div>
                   </div>
 
-                  <div className="mt-4 flex flex-wrap gap-2 text-[11px] text-slate-200 md:text-xs">
+                  <div className="mt-4 flex flex-wrap gap-2 text-[11px] text-stone-200 md:text-xs">
                     {project.tech.map((t) => (
                       <span key={t} className="tag-pill">
                         {t}
@@ -182,8 +182,8 @@ export function Projects() {
                 </div>
 
                 <div className="flex flex-col justify-between gap-4 md:items-end">
-                  <div className="rounded bg-slate-900 p-4 text-xs text-slate-300 md:text-sm">
-                    <div className="text-[11px] uppercase tracking-[0.2em] text-slate-500">
+                  <div className="rounded bg-stone-900 p-4 text-xs text-stone-300 md:text-sm">
+                    <div className="text-[11px] uppercase tracking-[0.2em] text-stone-500">
                       Why this matters
                     </div>
                     <p className="mt-2">
