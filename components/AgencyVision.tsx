@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export function AgencyVision() {
   return (
     <section id="vision" className="section-padding">
-      <div className="max-width glass overflow-hidden rounded-3xl p-6 md:p-8">
+      <div className="max-width glass overflow-hidden rounded-lg p-6 md:p-8">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -14,17 +14,17 @@ export function AgencyVision() {
         >
           <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
             <div className="max-w-xl">
-              <h2 className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-400">
+              <h2 className="text-sm font-semibold uppercase tracking-[0.25em] text-stone-400">
                 AI Agency Vision
               </h2>
-              <p className="mt-3 text-2xl font-semibold text-slate-50 md:text-3xl">
+              <p className="mt-3 text-2xl font-semibold text-stone-50 md:text-3xl">
                 Building the future of{" "}
-                <span className="gradient-text">
+                <span className="text-accent">
                   AI automation in the Middle East
                 </span>
                 .
               </p>
-              <p className="mt-4 text-sm leading-relaxed text-slate-300 md:text-base">
+              <p className="mt-4 text-sm leading-relaxed text-stone-300 md:text-base">
                 I&apos;m on a path to build a Cairo-based AI agency with global
                 reach—focused on intelligent automation, custom agents, and
                 AI-native workflows for ambitious companies. The goal is simple:
@@ -32,9 +32,9 @@ export function AgencyVision() {
                 their size or industry.
               </p>
             </div>
-            <div className="grid gap-3 text-xs text-slate-300 md:text-sm">
-              <div className="rounded-2xl bg-white/5 p-3">
-                <div className="text-[11px] uppercase tracking-[0.18em] text-slate-500">
+            <div className="grid gap-3 text-xs text-stone-300 md:text-sm">
+              <div className="rounded border border-stone-700 bg-stone-800 p-3">
+                <div className="text-[11px] uppercase tracking-[0.18em] text-stone-500">
                   Focus
                 </div>
                 <p className="mt-1">
@@ -42,8 +42,8 @@ export function AgencyVision() {
                   integrations, and intelligent decision support systems.
                 </p>
               </div>
-              <div className="rounded-2xl bg-white/5 p-3">
-                <div className="text-[11px] uppercase tracking-[0.18em] text-slate-500">
+              <div className="rounded border border-stone-700 bg-stone-800 p-3">
+                <div className="text-[11px] uppercase tracking-[0.18em] text-stone-500">
                   Region
                 </div>
                 <p className="mt-1">
@@ -54,9 +54,9 @@ export function AgencyVision() {
             </div>
           </div>
 
-          <div className="mt-6 grid gap-4 text-xs text-slate-200 md:grid-cols-3 md:text-sm">
+          <div className="mt-6 grid gap-4 text-xs text-stone-200 md:grid-cols-3 md:text-sm">
             <div>
-              <div className="text-[11px] uppercase tracking-[0.18em] text-slate-500">
+              <div className="text-[11px] uppercase tracking-[0.18em] text-stone-500">
                 What we&apos;ll build
               </div>
               <ul className="mt-2 space-y-1.5">
@@ -66,7 +66,7 @@ export function AgencyVision() {
               </ul>
             </div>
             <div>
-              <div className="text-[11px] uppercase tracking-[0.18em] text-slate-500">
+              <div className="text-[11px] uppercase tracking-[0.18em] text-stone-500">
                 How we operate
               </div>
               <ul className="mt-2 space-y-1.5">
@@ -76,7 +76,7 @@ export function AgencyVision() {
               </ul>
             </div>
             <div>
-              <div className="text-[11px] uppercase tracking-[0.18em] text-slate-500">
+              <div className="text-[11px] uppercase tracking-[0.18em] text-stone-500">
                 Ideal partners
               </div>
               <ul className="mt-2 space-y-1.5">

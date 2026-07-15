@@ -1,4 +1,7 @@
 import "./globals.css";
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 const SITE_URL = "https://ahmedgabal1.github.io/-ahmed-elsayed-ai-engineer.";
 const NAME = "Ahmed Elsayed";
@@ -85,14 +88,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark">
-      <body className="bg-background text-slate-100">
+    <html lang="en" className={`dark ${inter.variable}`}>
+      <body className="bg-background text-stone-100 font-sans">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
         />
-        <div className="relative min-h-screen bg-gradient-mesh">
-          <div className="pointer-events-none absolute inset-0 bg-grid" />
+        <div className="relative min-h-screen">
           <div className="relative">{children}</div>
         </div>
       </body>

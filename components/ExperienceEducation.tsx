@@ -77,15 +77,15 @@ export function ExperienceEducation() {
   return (
     <section id="experience" className="section-padding">
       <div className="max-width">
-        <h2 className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-400">
+        <h2 className="text-sm font-semibold uppercase tracking-[0.25em] text-stone-400">
           Experience & Education
         </h2>
-        <p className="mt-3 text-2xl font-semibold text-slate-50 md:text-3xl">
+        <p className="mt-3 text-2xl font-semibold text-stone-50 md:text-3xl">
           A focused path toward{" "}
-          <span className="gradient-text">AI engineering leadership</span>.
+          <span className="text-accent">AI engineering leadership</span>.
         </p>
 
-        <div className="mt-8 space-y-6 border-l border-slate-800/80 pl-4 md:pl-6">
+        <div className="mt-8 space-y-6 border-l border-stone-800/80 pl-4 md:pl-6">
           {items.map((item, idx) => (
             <motion.article
               key={`${item.type}-${item.org}-${idx}`}
@@ -96,27 +96,27 @@ export function ExperienceEducation() {
               transition={{ duration: 0.4, delay: idx * 0.05 }}
             >
               <div className="absolute -left-[27px] top-1 flex h-4 w-4 items-center justify-center">
-                <div className="h-2.5 w-2.5 rounded-full bg-gradient-to-r from-accent-blue to-accent-cyan shadow-[0_0_0_4px_rgba(15,23,42,0.9)]" />
+                <div className="h-2.5 w-2.5 rounded-full bg-accent shadow-[0_0_0_4px_rgba(15,23,42,0.9)]" />
               </div>
-              <div className="glass rounded-2xl p-4">
-                <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-slate-400">
-                  <span className="rounded-full bg-white/5 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-300">
+              <div className="glass rounded p-4">
+                <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-stone-400">
+                  <span className="rounded border border-stone-700 bg-stone-800 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-stone-300">
                     {item.type}
                   </span>
                   <span>
                     {item.period} · {item.location}
                   </span>
                 </div>
-                <h3 className="mt-3 text-sm font-semibold text-slate-50 md:text-base">
+                <h3 className="mt-3 text-sm font-semibold text-stone-50 md:text-base">
                   {item.title}
                 </h3>
-                <p className="text-xs font-medium text-slate-300 md:text-sm">
+                <p className="text-xs font-medium text-stone-300 md:text-sm">
                   {item.org}
                 </p>
-                <ul className="mt-3 space-y-1.5 text-xs text-slate-300 md:text-sm">
+                <ul className="mt-3 space-y-1.5 text-xs text-stone-300 md:text-sm">
                   {item.bullets.map((b) => (
                     <li key={b} className="flex gap-2">
-                      <span className="mt-1 h-[3px] w-[10px] rounded-full bg-accent-cyan/70" />
+                      <span className="mt-1 h-[3px] w-[10px] rounded bg-accent/70" />
                       <span>{b}</span>
                     </li>
                   ))}
