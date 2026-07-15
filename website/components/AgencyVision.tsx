@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export function AgencyVision() {
   return (
     <section id="vision" className="section-padding">
-      <div className="max-width glass overflow-hidden rounded-3xl p-6 md:p-8">
+      <div className="max-width glass overflow-hidden rounded-lg p-6 md:p-8">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -19,7 +19,7 @@ export function AgencyVision() {
               </h2>
               <p className="mt-3 text-2xl font-semibold text-slate-50 md:text-3xl">
                 Building the future of{" "}
-                <span className="gradient-text">
+                <span className="text-accent">
                   AI automation in the Middle East
                 </span>
                 .
@@ -33,7 +33,7 @@ export function AgencyVision() {
               </p>
             </div>
             <div className="grid gap-3 text-xs text-slate-300 md:text-sm">
-              <div className="rounded-2xl bg-white/5 p-3">
+              <div className="rounded border border-slate-700 bg-slate-800 p-3">
                 <div className="text-[11px] uppercase tracking-[0.18em] text-slate-500">
                   Focus
                 </div>
@@ -42,7 +42,7 @@ export function AgencyVision() {
                   integrations, and intelligent decision support systems.
                 </p>
               </div>
-              <div className="rounded-2xl bg-white/5 p-3">
+              <div className="rounded border border-slate-700 bg-slate-800 p-3">
                 <div className="text-[11px] uppercase tracking-[0.18em] text-slate-500">
                   Region
                 </div>

@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 
 const roles = [
   "AI Engineer",
-  "AI Agents Architect",
-  "LLM Specialist",
+  "LLM Systems Architect",
+  "RAG & Agentic Pipelines",
   "NLP & Computer Vision Engineer"
 ];
 
@@ -46,9 +46,7 @@ export function Hero() {
       className="section-padding relative overflow-hidden pt-28 md:pt-32"
     >
       <div className="pointer-events-none absolute inset-0 opacity-60">
-        <div className="absolute -left-40 top-10 h-72 w-72 rounded-full bg-accent.blue/25 blur-3xl" />
-        <div className="absolute right-0 top-40 h-80 w-80 rounded-full bg-accent.purple/25 blur-3xl" />
-        <div className="absolute bottom-0 left-10 h-64 w-64 rounded-full bg-accent.cyan/25 blur-3xl" />
+        {/* Background blobs removed for cleaner UI */}
       </div>
 
       <div className="max-width relative z-10 grid gap-12 md:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] md:items-center">
@@ -57,27 +55,27 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
-          <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-slate-300 backdrop-blur">
-            <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-400" />
+          <div className="inline-flex items-center gap-2 rounded border border-slate-700 bg-slate-800 px-4 py-1.5 text-sm font-medium text-slate-300">
+            <span className="inline-block h-2 w-2 rounded-full bg-emerald-400" />
             Available for remote roles & collaborations
           </div>
 
           <h1 className="mt-6 text-balance font-display text-4xl font-semibold tracking-tight md:text-5xl lg:text-6xl">
             Engineering{" "}
-            <span className="gradient-text">
+            <span className="text-accent">
               intelligent AI systems
             </span>{" "}
             that think, learn, and scale.
           </h1>
 
-          <p className="mt-5 max-w-xl text-balance text-sm leading-relaxed text-slate-300 md:text-base">
+          <p className="mt-5 max-w-xl text-balance text-base leading-relaxed text-slate-300 md:text-lg">
             I design and build production-grade AI systems—LLM agents, automation
             workflows, and computer vision pipelines—that turn complex problems
             into scalable, intelligent products. From idea to deployed system, I
             bridge research-level AI with real-world business impact.
           </p>
 
-          <div className="mt-6 flex flex-wrap items-center gap-3 text-xs text-slate-300 md:text-sm">
+          <div className="mt-6 flex flex-wrap items-center gap-3 text-sm text-slate-300 md:text-base">
             <span className="tag-pill">AI Engineer</span>
             <span className="tag-pill">LLMs & RAG</span>
             <span className="tag-pill">AI Agents & n8n</span>
@@ -93,7 +91,7 @@ export function Hero() {
               Work With Me
             </a>
             <a
-              href="/Ahmed_Elsayed_resume.pdf"
+              href="Ahmed_Elsayed_resume.pdf"
               className="btn-secondary"
               target="_blank"
               rel="noopener noreferrer"
@@ -118,13 +116,13 @@ export function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
         >
-          <div className="glass relative overflow-hidden rounded-3xl p-6">
+          <div className="glass relative overflow-hidden rounded-lg p-6">
             <div className="relative z-10">
               <div className="mb-4 flex items-center justify-between text-xs text-slate-400">
                 <span>AI Engineer Dashboard</span>
                 <span>Cairo, Egypt · Remote</span>
               </div>
-              <div className="rounded-2xl bg-gradient-to-br from-slate-900/80 via-slate-900/40 to-slate-900/10 p-4">
+              <div className="rounded bg-slate-900 p-4">
                 <div className="mb-4 flex items-start justify-between gap-2">
                   <div>
                     <div className="text-xs uppercase tracking-[0.2em] text-slate-400">
@@ -139,7 +137,7 @@ export function Hero() {
                   </div>
                 </div>
                 <div className="grid grid-cols-2 gap-3 text-xs">
-                  <div className="rounded-2xl bg-slate-900/80 p-3">
+                  <div className="rounded bg-slate-800 p-3">
                     <div className="text-[11px] text-slate-400">
                       Active Domains
                     </div>
@@ -147,7 +145,7 @@ export function Hero() {
                       LLMs, Agents, CV, NLP
                     </div>
                   </div>
-                  <div className="rounded-2xl bg-slate-900/40 p-3">
+                  <div className="rounded bg-slate-800 p-3">
                     <div className="text-[11px] text-slate-400">
                       Impact Focus
                     </div>
@@ -155,16 +153,16 @@ export function Hero() {
                       Automation & Scalability
                     </div>
                   </div>
-                  <div className="col-span-2 rounded-2xl bg-slate-900/60 p-3">
+                  <div className="col-span-2 rounded bg-slate-800 p-3">
                     <div className="flex items-center justify-between text-[11px] text-slate-400">
                       <span>AI Roles</span>
-                      <span className="font-mono text-accent.cyan">
+                      <span className="font-mono text-accent">
                         {typed}
-                        <span className="ml-0.5 inline-block h-4 w-[1px] animate-pulse bg-accent.cyan" />
+                        <span className="ml-0.5 inline-block h-4 w-[1px] animate-pulse bg-accent" />
                       </span>
                     </div>
-                    <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-slate-800">
-                      <div className="h-full w-5/6 rounded-full bg-gradient-to-r from-accent.blue to-accent.cyan" />
+                    <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-slate-900">
+                      <div className="h-full w-5/6 rounded-full bg-accent" />
                     </div>
                   </div>
                 </div>

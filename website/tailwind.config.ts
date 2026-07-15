@@ -9,24 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#050816",
-        surface: "#0B0F19",
+        background: "#0f172a", // slate-900
+        surface: "#1e293b", // slate-800
         accent: {
-          blue: "#3B82F6",
-          purple: "#8B5CF6",
-          cyan: "#22D3EE"
+          DEFAULT: "#3b82f6", // blue-500
+          hover: "#2563eb", // blue-600
         }
       },
       fontFamily: {
-        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
-        display: ["var(--font-display)", "system-ui", "sans-serif"]
-      },
-      boxShadow: {
-        soft: "0 18px 45px rgba(15, 23, 42, 0.75)"
-      },
-      backgroundImage: {
-        "gradient-mesh":
-          "radial-gradient(circle at 0% 0%, rgba(59,130,246,0.18) 0, transparent 50%), radial-gradient(circle at 100% 0%, rgba(139,92,246,0.18) 0, transparent 55%), radial-gradient(circle at 0% 100%, rgba(34,211,238,0.15) 0, transparent 55%)"
+        sans: ["Inter", "var(--font-sans)", "system-ui", "sans-serif"],
+        display: ["Inter", "var(--font-display)", "system-ui", "sans-serif"]
       }
     }
   },

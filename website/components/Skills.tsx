@@ -11,32 +11,33 @@ const categories: SkillCategory[] = [
   {
     title: "AI & Machine Learning",
     items: [
-      { name: "Large Language Models (LLMs)", level: "Expert" },
-      { name: "Transformers & RAG", level: "Advanced" },
-      { name: "Natural Language Processing (NLP)", level: "Advanced" },
-      { name: "Computer Vision", level: "Advanced" },
-      { name: "AI Agents & Multi-Agent Systems", level: "Advanced" },
-      { name: "Automation & Autonomous Pipelines", level: "Advanced" }
+      { name: "LLMs & RAG Pipelines", level: "Expert" },
+      { name: "AI Agents & Multi-Agent Systems", level: "Expert" },
+      { name: "LangChain & LangGraph", level: "Advanced" },
+      { name: "NLP & Transformers", level: "Advanced" },
+      { name: "Computer Vision (PyTorch)", level: "Advanced" },
+      { name: "Fine-Tuning (LoRA / QLoRA)", level: "Advanced" },
+      { name: "Vector Databases (FAISS)", level: "Advanced" }
     ]
   },
   {
-    title: "Programming",
+    title: "Engineering & MLOps",
     items: [
-      { name: "Python", level: "Advanced" },
-      { name: "Java", level: "Intermediate" },
-      { name: "MATLAB", level: "Intermediate" },
-      { name: "SQL", level: "Intermediate" }
+      { name: "Python", level: "Expert" },
+      { name: "FastAPI & RESTful APIs", level: "Advanced" },
+      { name: "Docker & CI/CD (GitHub Actions)", level: "Advanced" },
+      { name: "n8n & Workflow Automation", level: "Advanced" },
+      { name: "React.js & Dashboards", level: "Intermediate" },
+      { name: "SQL, Bash & Java", level: "Intermediate" }
     ]
   },
   {
-    title: "Frameworks & Tools",
+    title: "Cloud & APIs",
     items: [
-      { name: "PyTorch, TensorFlow, scikit-learn", level: "Advanced" },
-      { name: "Hugging Face, LangChain", level: "Advanced" },
-      { name: "OpenAI, LLaMA, Claude APIs", level: "Advanced" },
-      { name: "n8n, Workflow Orchestration", level: "Advanced" },
-      { name: "FastAPI, RESTful APIs, Docker", level: "Advanced" },
-      { name: "React.js, Dashboards, Auth", level: "Intermediate" }
+      { name: "Azure OpenAI & Fundamentals", level: "Advanced" },
+      { name: "OpenAI, Claude & Meta LLaMA APIs", level: "Advanced" },
+      { name: "AWS & GCP", level: "Intermediate" },
+      { name: "WebSockets & Tool-Calling Agents", level: "Advanced" }
     ]
   }
 ];
@@ -58,7 +59,7 @@ export function Skills() {
             </h2>
             <p className="mt-3 text-2xl font-semibold text-slate-50 md:text-3xl">
               A full-stack skill set for{" "}
-              <span className="gradient-text">
+              <span className="text-accent">
                 intelligent, production-ready AI systems
               </span>
               .
@@ -75,13 +76,13 @@ export function Skills() {
           {categories.map((category, idx) => (
             <motion.div
               key={category.title}
-              className="glass group relative overflow-hidden rounded-3xl p-5"
+              className="glass group relative overflow-hidden rounded-lg p-5"
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5, ease: "easeOut", delay: idx * 0.05 }}
             >
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-accent.blue/10 via-transparent to-accent.purple/10 opacity-0 transition group-hover:opacity-100" />
+              <div className="pointer-events-none absolute inset-0 bg-slate-800/20 opacity-0 transition group-hover:opacity-100" />
               <div className="relative z-10">
                 <h3 className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
                   {category.title}
@@ -95,9 +96,9 @@ export function Skills() {
                           {item.level}
                         </span>
                       </div>
-                      <div className="mt-1 h-1.5 w-full overflow-hidden rounded-full bg-slate-800/80">
+                      <div className="mt-1 h-1.5 w-full overflow-hidden rounded bg-slate-800/80">
                         <div
-                          className={`h-full rounded-full bg-gradient-to-r from-accent.blue via-accent.purple to-accent.cyan ${levelToWidth[item.level]}`}
+                          className={`h-full rounded bg-accent ${levelToWidth[item.level]}`}
                         />
                       </div>
                     </li>
