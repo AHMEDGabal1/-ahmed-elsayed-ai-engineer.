@@ -32,7 +32,7 @@ This portfolio is designed to position Ahmed as:
 | **Hero** | Bold entry with role typing, gradient visuals, and CTAs (View My Work, Work With Me, Download CV) |
 | **About** | Founder-style story focused on intelligent systems, LLMs, and automation |
 | **Skills** | Skill cards across AI/ML, Programming, and Frameworks/Tools with proficiency indicators |
-| **Projects** | Business-focused AI projects in Problem → Solution → Result format (ForsaHunt, Dentlyzer, translation microservices) |
+| **Repositories** | Searchable, filterable directory of every public GitHub repository, with category, language, stars, update date, source links, and live demos where available |
 | **AI Agency Vision** | Visionary section about building an AI automation agency in the Middle East |
 | **Experience & Education** | Clean timeline with real CV data |
 | **Contact** | High-conversion contact section with email, LinkedIn, GitHub links |
@@ -61,6 +61,9 @@ Update content in:
 
 - `app/page.tsx` — Main page composition
 - `components/*.tsx` — Individual section components
+- `lib/repositories.ts` — Static catalog of public GitHub repositories shown in the portfolio
+
+The repository catalog is intentionally static so it can be exported and deployed safely on GitHub Pages. Refresh the data from GitHub and regenerate this file when the public repository list changes.
 
 ## CV Download
 
@@ -68,7 +71,7 @@ Place your resume PDF at `public/Ahmed_Elsayed_resume.pdf`. The "Download CV" bu
 
 ## Deployment
 
-Deploy on any Node-compatible platform: Vercel, Railway, Render, or VPS.
+The repository is configured for a static export and deploys to GitHub Pages through `.github/workflows/nextjs.yml`. The current public site is available at [ahmedgabal1.github.io/-ahmed-elsayed-ai-engineer.](https://ahmedgabal1.github.io/-ahmed-elsayed-ai-engineer./).
 
 ## License
 
